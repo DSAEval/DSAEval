@@ -219,27 +219,15 @@
             <div class="column is-four-fifths">
                 <h2 class="section-title">Abstract</h2>
                 <div class="abstract-box">
-                    Recent LLM-based data agents aim to automate data science tasks ranging from data analysis to deep
-                    learning.
-                    However, the open-ended nature of real-world data science problems, which often span multiple
-                    taxonomies and lack standard answers, poses a significant challenge for evaluation.
-                    To address this, we introduce DSAEval, a benchmark comprising 641 real-world data science problems
-                    grounded in 285 diverse datasets that cover both structured data such as tabular data and
-                    unstructured data like vision and text collected from textbooks and online resources.
-                    To simulate authentic usage scenarios, DSAEval incorporates three distinctive features:
-                    (1) Multimodal Environment Perception, which enables agents to interpret observations from multiple
-                    modalities including text and vision;
-                    (2) Multi-Query Interactions, which mirror the iterative and cumulative nature of real-world data
-                    science projects; and
-                    (3) Multi-Dimensional Evaluation, which provides a holistic assessment across reasoning, code, and
-                    results.
-                    We conducted a systematic evaluation of 11 advanced agentic LLMs using our benchmark.
-                    Our empirical results identify Claude-Sonnet-4.5 as the strongest model, while Grok-4.1-Fast is the
-                    most efficient and cost-effective.
-                    We further show that multimodal perception yields performance gains of up to 16.10\%.
-                    Overall, current data science agents perform well on structured data and routine workflows, but
-                    remain limited in unstructured domains.
-                    We conclude by outlining key insights and directions for future research.
+                    Recent LLM-based data agents aim to automate data science tasks ranging from data analysis to deep learning.
+                    However, the open-ended nature of real-world data science problems, which often span multiple taxonomies and lack standard answers, poses a significant challenge for evaluation.
+                    To address this, we introduce DSAEval, a benchmark comprising 641 real-world data science problems grounded in 285 diverse datasets, covering both structured and unstructured data (e.g., vision and text).
+                    DSAEval incorporates three distinctive features:
+                    (1) Multimodal Environment Perception, which enables agents to interpret observations from multiple modalities including text and vision;
+                    (2) Multi-Query Interactions, which mirror the iterative and cumulative nature of real-world data science projects; and
+                    (3) Multi-Dimensional Evaluation, which provides a holistic assessment across reasoning, code, and results.
+                    We systematically evaluate 11 advanced agentic LLMs using DSAEval.
+                    Our results show that Claude-Sonnet-4.5 achieves the strongest overall performance, GPT-5.2 is the most efficient, and MiMo-V2-Flash is the most cost-effective. We further demonstrate that multimodal perception consistently improves performance on vision-related tasks, with gains ranging from 2.04% to 11.30%. Overall, while current data science agents perform well on structured data and routine data anlysis workflows, substantial challenges remain in unstructured domains. Finally, we offer critical insights and outline future research directions to advance the development of data science agents.
                 </div>
             </div>
         </div>
@@ -373,115 +361,115 @@
         </div>
 
         <div class="columns is-centered">
-            <div class="column is-10">
-                <div class="table-container">
-                    <table class="custom-table">
-                        <thead>
-                        <tr>
-                            <th>Rank</th>
-                            <th>Model</th>
-                            <th>Total Score</th>
-                            <th>Reasoning</th>
-                            <th>Code</th>
-                            <th>Result</th>
-                        </tr>
-                        </thead>
-                        <tbody>
-                        <tr>
-                            <td>1</td>
-                            <td><strong>Claude-4.5-Sonnet</strong></td>
-                            <td class="best-score">7.88</td>
-                            <td>8.28</td>
-                            <td>8.67</td>
-                            <td>6.98</td>
-                        </tr>
-                        <tr>
-                            <td>2</td>
-                            <td><strong>Grok-4.1-Fast</strong></td>
-                            <td class="second-score">7.47</td>
-                            <td>7.88</td>
-                            <td>8.23</td>
-                            <td>6.59</td>
-                        </tr>
-                        <tr>
-                            <td>3</td>
-                            <td><strong>Mimo-v2-Flash</strong></td>
-                            <td class="second-score">7.14</td>
-                            <td>7.47</td>
-                            <td>8.02</td>
-                            <td>6.63</td>
-                        </tr>
-                        <tr>
-                            <td>4</td>
-                            <td><strong>Gemini-3-Pro</strong></td>
-                            <td>7.12</td>
-                            <td>7.75</td>
-                            <td>8.15</td>
-                            <td>6.02</td>
-                        </tr>
-                        <tr>
-                            <td>5</td>
-                            <td><strong>MiniMax-M2</strong></td>
-                            <td>7.05</td>
-                            <td>7.42</td>
-                            <td>7.87</td>
-                            <td>6.16</td>
-                        </tr>
-                        <tr>
-                            <td>6</td>
-                            <td><strong>GPT-5.2</strong></td>
-                            <td>6.62</td>
-                            <td>7.21</td>
-                            <td>7.27</td>
-                            <td>5.69</td>
-                        </tr>
-
-                        <tr>
-                            <td>7</td>
-                            <td><strong>DeepSeek-V3.2-Exp</strong></td>
-                            <td>6.59</td>
-                            <td>6.92</td>
-                            <td>7.53</td>
-                            <td>5.63</td>
-                        </tr>
-                        <tr>
-                            <td>8</td>
-                            <td><strong>GPT-5-Nano</strong></td>
-                            <td>6.49</td>
-                            <td>7.06</td>
-                            <td>7.22</td>
-                            <td>5.52</td>
-                        </tr>
-                        <tr>
-                            <td>9</td>
-                            <td><strong>GLM-4.6v</strong></td>
-                            <td>6.21</td>
-                            <td>6.63</td>
-                            <td>7.09</td>
-                            <td>5.24</td>
-                        </tr>
-                        <tr>
-                            <td>10</td>
-                            <td><strong>Qwen3-VL-30B</strong></td>
-                            <td>4.71</td>
-                            <td>5.88</td>
-                            <td>4.69</td>
-                            <td>3.84</td>
-                        </tr>
-
-                        <tr>
-                            <td>11</td>
-                            <td><strong>Ministral-3-14b</strong></td>
-                            <td>3.78</td>
-                            <td>4.49</td>
-                            <td>4.31</td>
-                            <td>2.86</td>
-                        </tr>
-                        </tbody>
-                    </table>
-                </div>
-            </div>
+    <div class="column is-10">
+        <div class="table-container">
+            <table class="custom-table">
+                <thead>
+                <tr>
+                    <th>Rank</th>
+                    <th>Model</th>
+                    <th>Total Score</th>
+                    <th>Reasoning</th>
+                    <th>Code</th>
+                    <th>Result</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>1</td>
+                    <td><strong>Claude-sonnet-4.5</strong></td>
+                    <td class="best-score">8.164</td>
+                    <td>8.970</td>
+                    <td>8.590</td>
+                    <td>7.240</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td><strong>GPT-5.2</strong></td>
+                    <td class="second-score">7.713</td>
+                    <td>8.270</td>
+                    <td>8.400</td>
+                    <td>6.780</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td><strong>Mimo-v2-flash</strong></td>
+                    <td class="second-score">7.644</td>
+                    <td>8.140</td>
+                    <td>8.540</td>
+                    <td>6.600</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td><strong>Minimax-m2</strong></td>
+                    <td>7.642</td>
+                    <td>8.100</td>
+                    <td>8.440</td>
+                    <td>6.700</td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td><strong>Gemini-3-pro</strong></td>
+                    <td>7.309</td>
+                    <td>7.960</td>
+                    <td>8.310</td>
+                    <td>6.070</td>
+                </tr>
+                <tr>
+                    <td>6</td>
+                    <td><strong>Grok-4.1-fast</strong></td>
+                    <td>7.254</td>
+                    <td>7.870</td>
+                    <td>8.070</td>
+                    <td>6.180</td>
+                </tr>
+                <tr>
+                    <td>7</td>
+                    <td><strong>GPT-5-nano</strong></td>
+                    <td>7.069</td>
+                    <td>7.700</td>
+                    <td>7.850</td>
+                    <td>6.010</td>
+                </tr>
+                <tr>
+                    <td>8</td>
+                    <td><strong>DeepSeek-v3.2</strong></td>
+                    <td>7.030</td>
+                    <td>7.470</td>
+                    <td>7.830</td>
+                    <td>6.100</td>
+                </tr>
+                <tr>
+                    <td>9</td>
+                    <td><strong>GLM-4.6v</strong></td>
+                    <td>6.874</td>
+                    <td>7.500</td>
+                    <td>7.800</td>
+                    <td>5.710</td>
+                </tr>
+                <tr>
+                    <td>10</td>
+                    <td><strong>Qwen3-VL-30B-Thinking</strong></td>
+                    <td>5.324</td>
+                    <td>6.560</td>
+                    <td>5.320</td>
+                    <td>4.400</td>
+                </tr>
+                <tr>
+                    <td>11</td>
+                    <td><strong>Ministral-14b-2512</strong></td>
+                    <td>5.182</td>
+                    <td>5.880</td>
+                    <td>5.740</td>
+                    <td>4.240</td>
+                </tr>
+                </tbody>
+            </table>
         </div>
+    </div>
+</div>
+
+
     </div>
 </section>
 
@@ -507,7 +495,7 @@
                 <img src="efficiency.svg" alt="Efficiency Analysis" class="teaser-img">
                 <p class="caption">
                     <strong>Figure 5: Efficiency Analysis.</strong>
-                    (Left) Total Score vs. Steps. 
+                    (Left) Total Score vs. Tokens.
                     (Right) Total Score vs. Price.
                 </p>
             </div>
